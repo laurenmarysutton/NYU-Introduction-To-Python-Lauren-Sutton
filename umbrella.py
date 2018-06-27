@@ -1,6 +1,8 @@
-question = input("Is it raining outside?")
-print(question)
-if yes
-    print("You need to bring your umbrella!")
-else
-    print("You do not need to bring an umbrella!")
+raining = 'yes'
+
+if raining == 'yes':
+    print("Better bring an umbrella")
+elif raining =='maybe':
+    print("Better bring one so I'm prepared if it rains")
+else:
+    print("I don't need to pack an umbrella")
