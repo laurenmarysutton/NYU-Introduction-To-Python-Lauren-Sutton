@@ -1,0 +1,11 @@
+Homework - Part 4
+States: HTML vs Python
+
+Is there another data structure that can solve this problem? 
+What worked about this approach? What didn't work?
+
+Rather than using an html list of options for the user to 
+select from, a python function can be written that includes a loop. 
+This is a better approach because the code length is shorter, 
+cleaner, and easier to read than having to scroll through a long 
+html list.
