@@ -72,8 +72,5 @@ class TestDivide(unittest.TestCase):
         result = my_math.divide(30.0, 6.0)
         self.assertEqual(result, 5.0)
 
-    def test_divide_strings(self):
-        self.assertRaises(TypeError, my_math.divide, ('bbb', 'bbbbbb'))
-
 if __name__ == '__main__':
     unittest.main()
