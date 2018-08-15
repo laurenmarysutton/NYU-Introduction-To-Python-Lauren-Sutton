@@ -1,0 +1,16 @@
+My game is called the Amazing Race.
+
+Ojbective:
+The objective of the game is to complete a journey around the world starting in New York City then traveling to Reykjavik, 
+then traveling to Paris, then traveling to Moscow, then traveling to Beijing, then arriving back in New York City.
+
+Instructions:
+The user will play the game by answering a series of trivia questions to move from one city to the next. 
+If the user would like to quit the game at any time, the user is able to do so.
+
+Approach:
+Created a series of functions for each question in the game, a function for the game instructions, a function that enables 
+the user to quit, and the main function to call all of the questions. Formatted the responses and then used a series of 
+conditional statements to print a response to the user as to whether or not he/she got the answer correct. If the user 
+incorrectly answers a question, the user will be exited from the game. If the user answers correctly, he/she will be notified. 
+If the user provides a response that is invalid, the user will be prompted to respond to the question again.
