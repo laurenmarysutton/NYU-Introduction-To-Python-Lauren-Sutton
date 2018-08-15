@@ -1,7 +1,12 @@
 def intro():
     print('Welcome to the Amazing Race game! Lets get started')
     name_intake = input('What is your name?\n')
-    print('{}, best of luck as you start your journey around the world! The objective of this game is to travel around the world by answering a series of trivia questions. You will start in New York City and answer these trivia questions to move from one city to the next until you make your way back to New York City. You must answer 5 questions correctly in order to successfully make it back to New York City. If you incorrectly answer one question, you will be eliminated from the game.\n'.format(name_intake))
+    print('{}, best of luck as you start your journey around the world! The objective of this game is to travel around the world by answering a series of 5 trivia questions. You will start in New York City and answer these trivia questions to move from one city to the next until you make your way back to New York City. If you incorrectly answer one question, you will be eliminated from the game. To exit the game at any time, please enter: q.\n'.format(name_intake))
+
+def quit(response):
+    if response == 'q':
+        print('Thank you for playing the game. Better luck next time!')
+        exit()
 
 def question_set_1():
     question_1 = input('This 1st question is to travel from New York City to Reykjavik, the capital of Iceland. Enter true or false: There are more than 125 volcanic mountains in Iceland.\n')
@@ -11,8 +16,12 @@ def question_set_1():
         print('Correct! You have arrived in Reykjavik.\n')
     elif formatted_1[0] == 'f':
         print('This is incorrect. Your journey has ended in New York City.')
+        exit()
+    elif formatted_1[0] == 'q':
+        quit(response=formatted_1)
     else:
-        print('That response is invalid. Please try again.')
+        print('That response is invalid. Please try again by entering either true or false.')
+        question_set_1()
 
 def question_set_2():
     question_2 = input('This 2nd question is to travel from Reyjavik to Paris, the capital of France. Enter true or false: The Mona Lisa is a painting that is housed in the Louve Museum in Paris.\n')
@@ -22,8 +31,12 @@ def question_set_2():
         print('Correct! You have arrived in Paris.\n')
     elif formatted_2[0] == 'f':
         print('This is incorrect. Your journey has ended in Reyjavik.')
+        exit()
+    elif formatted_2[0] == 'q':
+        quit(response=formatted_2)
     else:
-        print('That response is invalid. Please try again.')
+        print('That response is invalid. Please try again by entering either true or false.')
+        question_set_2()
 
 def question_set_3():
     question_3 = input('This 3rd question to travel from Paris to Moscow, the capital of Russia. Enter true or false: Moscow is the most heavily populated city in Russia.\n')
@@ -33,8 +46,12 @@ def question_set_3():
         print('Correct! You have arrived in Moscow.\n')
     elif formatted_3[0] == 'f':
         print('This is incorrect. Your journey has ended in Paris.')
+        exit()
+    elif formatted_3[0] == 'q':
+        quit(response=formatted_3)
     else:
-        print('That response is invalid. Please try again.')
+        print('That response is invalid. Please try again by entering either true or false.')
+        question_set_3()
 
 def question_set_4():
     question_4 = input('This 4th question is to travel from Moscow to Beijing, the capital of China. Enter true or false: Beijing is one of the bicycle capitals of the world.\n')
@@ -44,8 +61,12 @@ def question_set_4():
         print('Correct! You have arrived in Beijing.\n')
     elif formatted_4[0] == 'f':
         print('This is incorrect. Your journey has ended in Moscow.')
+        exit()
+    elif formatted_4[0] == 'q':
+        quit(response=formatted_4)
     else:
-        print('That response is invalid. Please try again.')
+        print('That response is invalid. Please try again by entering either true or false.')
+        question_set_4()
 
 def question_set_5():
     question_5 = input('This 5th question is to travel from Beijing to arrive back in New York City. Enter true or false: The first American chess tournament was held in New York City in 1843.\n')
@@ -55,8 +76,12 @@ def question_set_5():
         print('Correct! You have arrived in New York City and completed your journey! Congratulations!')
     elif formatted_5[0] == 'f':
         print('This is incorrect. Your journey has ended in Moscow.')
+        exit()
+    elif formatted_5[0] == 'q':
+        quit(response=formatted_5)
     else:
-        print('That response is invalid. Please try again.')
+        print('That response is invalid. Please try again by entering either true or false.')
+        question_set_5()
 
 def main():
     instructions = intro()
