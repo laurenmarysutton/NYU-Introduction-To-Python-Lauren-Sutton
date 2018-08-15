@@ -17,7 +17,7 @@ def question_set_1():
     elif formatted_1[0] == 'f':
         print('This is incorrect. Your journey has ended in New York City.')
         exit()
-    elif formatted_1[0] == 'q':
+    elif formatted_1 == 'q':
         quit(response=formatted_1)
     else:
         print('That response is invalid. Please try again by entering either true or false.')
@@ -32,7 +32,7 @@ def question_set_2():
     elif formatted_2[0] == 'f':
         print('This is incorrect. Your journey has ended in Reyjavik.')
         exit()
-    elif formatted_2[0] == 'q':
+    elif formatted_2 == 'q':
         quit(response=formatted_2)
     else:
         print('That response is invalid. Please try again by entering either true or false.')
@@ -47,7 +47,7 @@ def question_set_3():
     elif formatted_3[0] == 'f':
         print('This is incorrect. Your journey has ended in Paris.')
         exit()
-    elif formatted_3[0] == 'q':
+    elif formatted_3 == 'q':
         quit(response=formatted_3)
     else:
         print('That response is invalid. Please try again by entering either true or false.')
@@ -62,7 +62,7 @@ def question_set_4():
     elif formatted_4[0] == 'f':
         print('This is incorrect. Your journey has ended in Moscow.')
         exit()
-    elif formatted_4[0] == 'q':
+    elif formatted_4 == 'q':
         quit(response=formatted_4)
     else:
         print('That response is invalid. Please try again by entering either true or false.')
@@ -77,7 +77,7 @@ def question_set_5():
     elif formatted_5[0] == 'f':
         print('This is incorrect. Your journey has ended in Moscow.')
         exit()
-    elif formatted_5[0] == 'q':
+    elif formatted_5 == 'q':
         quit(response=formatted_5)
     else:
         print('That response is invalid. Please try again by entering either true or false.')
